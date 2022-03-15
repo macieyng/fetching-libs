@@ -31,7 +31,7 @@ This package can be used only in async mode. 8+ years on the market.
   - https://httpstat.us - cool service that let's you tets all sorts of http status codes and connection timeouts
 - python version 3.10
 
-### Server
+### Local Server
 
 [Minimal](https://fastapi.tiangolo.com/#create-it) required setup for FastAPI is used, only one enpoint and nothing more.
 
@@ -132,7 +132,7 @@ Juding by my experience (which is rather small) I'd say you should always go wit
 - you only use async - so part of `httpx` would be used at all
 - you use both - great! But you need to create different clients/services/functions/methods anyway to handle sync/async requests and this parts are not interchangeable, so why reject the most efficient solution? `¯\_(ツ)_/¯`
 
-## The fun part - I actually like `httpx`
+## I actually like `httpx`
 
 I had a chance to work with `httpx.Client` a little and I liked the way you can build auth flows or build requests objects and reuse them instead of creating them every time. But that's for the other time. If you're interested in that checkout [advanced useage](https://www.python-httpx.org/advanced/).
 
